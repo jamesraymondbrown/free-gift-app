@@ -1,0 +1,11 @@
+name = "product-discount-ext"
+type = "product_discounts"
+api_version = "2023-01"
+
+[build]
+command = "cargo wasi build --release"
+path = "target/wasm32-wasi/release/product-discount-ext.wasm"
+
+[ui.paths]
+create = "/"
+details = "/"
